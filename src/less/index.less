@@ -1,0 +1,128 @@
+@divide: 7.5;
+@pswWidth: 375;
+@ppr: @divide/@pswWidth * 1rem;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    overscroll-behavior: none;
+    font-family: Gilroy-regular, -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+.page-wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    touch-action: none;
+    background: url(https://lf1-cdn-tos.bytegoofy.com/goofy/ies/douyin_home_web/imgs/mob_1-1.15453147.gif) center center / 100%;
+}
+
+.page-header {
+    .icon-douyin-logo-copy {
+        position: absolute;
+        left: .5rem;
+        top: .42rem;
+        width: 68px;
+        height: 28px;
+        color: #ffff;
+        font-size: 27px;
+    }
+}
+
+.page-mainer {
+    padding-top: 1.8rem;
+
+    .mainer-title {
+        padding-left: 0.86rem;
+        padding-right: 0.86rem;
+        font-style: normal;
+        font-weight: bold;
+        font-size: .6rem;
+        line-height: .7rem;
+        color: #fff;
+        line-break: anywhere;
+    }
+
+    .mainer-line{
+        margin: auto;
+        margin-top: .24rem;
+        margin-bottom: .16rem;
+        width: 5.76rem;
+        height: 1px;
+        background: #fff;
+        opacity: .1;
+    }
+
+    .mainer-subtitle{
+        margin: 0 auto;
+        width: 5.74rem;
+        font-weight: 500;
+        font-size: .28rem;
+        line-height: .48rem;
+        text-align: justify;
+        color: #fff;
+        opacity: .7;
+    }
+
+    .mainer-btn{
+        position: fixed;
+        bottom: 1.16rem;
+        left: .62rem;
+        pointer-events: auto;
+        cursor: pointer;
+        
+        .btn-download{
+            margin: 0 auto;
+            margin-bottom: .4rem;
+            width: 6.14rem;
+            height: 1rem;
+            line-height: 1rem;
+            font-size: .34rem;
+            color: #000;
+            text-align: center;
+            background: #fff;
+            border: 2px solid #fff;
+            border-radius: .16rem;
+        }
+
+        .btn-ghost{
+            margin: 0 auto;
+            width: 6.14rem;
+            height: 1rem;
+            font-size: .34rem;
+            line-height: 1rem;
+            color: #fff;
+            text-align: center;
+            border: 2px solid #fff;
+            border-radius: .16rem;
+            background: rgba(0,0,0,.2);
+        }
+
+        .btn-link{
+            display: block;
+            margin-top: .7rem;
+            font-size: .34rem;
+            color: #fff;
+            text-align: center;
+            text-decoration: underline;
+        }
+    }
+}
+
+.page-footer{
+    .icon-xiangxiajiantou1{
+        position: fixed;
+        bottom: .4rem;
+        left: calc(50% - 7px);
+        color: #ffff;
+        font-size: 17px;
+    }
+}
